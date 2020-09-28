@@ -19,7 +19,6 @@ const PulsatingIcon = ({
       tension: 500,
       friction: 20
     },
-    // Prevent animating on initial render
     immediate: !elementRef.current
   });
 
