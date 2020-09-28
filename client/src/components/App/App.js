@@ -59,7 +59,6 @@ export function UnconnectedApp({
 
   const renderModals = () => {
     if (modal.modals.length > 0) {
-      // Disable scrolling on the body while a modal is active
       document.querySelector('body').setAttribute('style', 'overflow: hidden;');
       return modal.modals.map((modal, idx) => (
         <Modal key={idx} component={modal.component} {...modal.props} />
@@ -86,7 +85,6 @@ export function UnconnectedApp({
   });
 
   const renderApp = () => {
-    // Wait for authentication
     if (!currentUser && token) {
       return <LoadingPage />;
     }
