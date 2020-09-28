@@ -147,7 +147,6 @@ const CommentReply = ({
             )}
             <button
               onClick={() =>
-                // Telling the PostDialogCommentForm that we want to reply to the parent comment
                 dialogDispatch({
                   type: 'SET_REPLYING',
                   payload: {
